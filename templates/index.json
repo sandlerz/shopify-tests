@@ -1,0 +1,73 @@
+{
+  "sections": {
+    "da0c24f6-24fe-4688-b54b-d0546ec022a2": {
+      "type": "image-banner",
+      "settings": {
+        "background_image_desktop": "shopify:\/\/shop_images\/OA_SPF_BVH51451-Edit_extended_1.png",
+        "background_image_mobile": "shopify:\/\/shop_images\/OA_SPF_BVH51451-Edit_extended_1_1.png",
+        "heading": "<p>If the wind will not serve, take to the oars.<\/p>",
+        "below_text": "-Latin Proverb"
+      }
+    },
+    "c2c6c2e0-03fa-4357-9f42-21b2ab36bf77": {
+      "type": "highlight-text-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Copy_of_DSC_9805_1.png",
+        "heading": "A Personal Investment",
+        "paragraph": "<p>Mia + Laura left high-profile careers in media and tech in 2015 to start a new venture. They noticed people like their husbands investing everything in their families, communities, and careers but often neglecting their own skincare. Through Oars + Alps, Mia + Laura aimed to support these guys and the investments they make in themselves with premium, hard-working products that can keep up.<\/p>"
+      }
+    },
+    "9641ff1b-9486-49dc-9160-bd0c10ca374a": {
+      "type": "highlight-articles",
+      "blocks": {
+        "5768d405-366b-460a-aacf-7bdca53e62c1": {
+          "type": "article",
+          "settings": {
+            "heading": "The +",
+            "paragraph": "<p>Since those early days, we’ve continued to support guys who want more from life and less in their products. We put a + in everything we do, asking more from our skincare so you don’t have to. <\/p><p><\/p><p>Our innovative, travel-friendly formulas pack multiple benefits in one so an investment in yourself doesn’t have to take away from everything else that matters. Check out all the Ingredients we add (and the junk we leave out) so you can get the most out of your grooming.<\/p>",
+            "reverse": false,
+            "image": "shopify:\/\/shop_images\/Frame_1_1.png",
+            "horizontal": 65,
+            "vertical": 85,
+            "scale": 2
+          }
+        },
+        "fdb57b45-dcee-4a5a-9ea4-24952ddb0d99": {
+          "type": "article",
+          "settings": {
+            "heading": "From the Oars to the Alps",
+            "paragraph": "<p>The 2 men who inspired our company were an avid rower and a keen skier. Every product we make celebrates their adventure, ambition, and grit (have you tried our award-winning Superfoliant Bar Soap?). Whether your next peak starts in the boardroom or base camp, we're glad you're here.<\/p>",
+            "reverse": true,
+            "image": "shopify:\/\/shop_images\/OA_SPF_BVH53374_1.png",
+            "horizontal": 0,
+            "vertical": 0,
+            "scale": 0
+          }
+        }
+      },
+      "block_order": [
+        "5768d405-366b-460a-aacf-7bdca53e62c1",
+        "fdb57b45-dcee-4a5a-9ea4-24952ddb0d99"
+      ],
+      "settings": {
+      }
+    },
+    "46219436-61ef-4793-b5d8-81b6008ee980": {
+      "type": "hero-with-cta",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/OA_SPF_BVH51462_extended_3.png",
+        "image_mobile": "shopify:\/\/shop_images\/OA_SPF_BVH51462_extended_3_1.png",
+        "heading": "Get the Goods",
+        "button_label": "Shop our Products",
+        "button_url": "shopify:\/\/products\/gift-card",
+        "margin_vertical": 200
+      }
+    }
+  },
+  "order": [
+    "da0c24f6-24fe-4688-b54b-d0546ec022a2",
+    "c2c6c2e0-03fa-4357-9f42-21b2ab36bf77",
+    "9641ff1b-9486-49dc-9160-bd0c10ca374a",
+    "46219436-61ef-4793-b5d8-81b6008ee980"
+  ]
+}

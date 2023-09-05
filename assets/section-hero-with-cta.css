@@ -1,0 +1,101 @@
+.hero-with-cta__wrapper {
+  position: relative;
+  height: 591px;
+  padding: 255px 214px 0px;
+}
+
+.hero-with-cta__body {
+  position: relative;
+  z-index: 1;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  align-items: center;
+}
+
+.hero-with-cta__heading {
+  color: #012b3a;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 108.8%; /* 58.752px */
+  margin: 0;
+}
+
+.hero-with-cta__button {
+  position: relative;
+  z-index: 10;
+  width: 303px;
+  height: 74px;
+  background-color: #025776;
+  display: grid;
+  place-content: center;
+
+  color: #fff;
+  text-align: center;
+  font-family: Roboto Slab;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108.8%; /* 27.2px */
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.hero-with-cta__button :hover {
+  opacity: 0.8;
+}
+
+.hero-with-cta__image--desktop,
+.hero-with-cta__image--mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.hero-with-cta__image--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-with-cta__wrapper {
+    position: relative;
+    height: 384px;
+    margin: 0 !important;
+    padding: 31px 12px 0px;
+  }
+
+  .hero-with-cta__body {
+    gap: 15px;
+    margin: auto;
+  }
+
+  .hero-with-cta__heading {
+    font-size: 33px;
+    line-height: 108.8%; /* 35.904px */
+  }
+
+  .hero-with-cta__button {
+    height: 46px;
+    width: 188px;
+
+    font-size: 17px;
+    line-height: 108.8%; /* 18.496px */
+  }
+
+  .hero-with-cta__image--desktop {
+    display: none;
+  }
+
+  .hero-with-cta__image--mobile {
+    display: block;
+  }
+}

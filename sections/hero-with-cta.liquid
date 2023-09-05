@@ -1,0 +1,69 @@
+{{ 'section-hero-with-cta.css' | asset_url | stylesheet_tag }}
+
+<section class="hero-with-cta__wrapper" style="margin-top: -{{ section.settings.margin_vertical }}px">
+  <div class="hero-with-cta__body">
+    {% if section.settings.heading != empty %}
+      <h2 class="hero-with-cta__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    {% if section.settings.button_label != empty %}
+      <a href="{{ section.settings.button_url }}" class="hero-with-cta__button">{{ section.settings.button_label }}</a>
+    {% endif %}
+  </div>
+
+  {% if section.settings.image_desktop %}
+    {{ section.settings.image_desktop | image_url: width: 1440 | image_tag: class: 'hero-with-cta__image--desktop' }}
+  {% endif %}
+
+  {% if section.settings.image_mobile %}
+    {{ section.settings.image_mobile | image_url: width: 768 | image_tag: class: 'hero-with-cta__image--mobile' }}
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Hero With CTA",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image mobile"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"
+    },
+    {
+      "type": "range",
+      "id": "margin_vertical",
+      "min": 0,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Negative Margin",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero With CTA"
+    }
+  ]
+}
+{% endschema %}

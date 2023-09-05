@@ -1,0 +1,66 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="image-banner__wrapper">
+  <div class="image-banner__wrapper-body">
+    {% if section.settings.heading != empty %}
+      <div class="image-banner__heading">{{ section.settings.heading }}</div>
+    {% endif %}
+
+    {% if section.settings.below_text != empty %}
+      <span class="image-banner__below-text">{{ section.settings.below_text }}</span>
+    {% endif %}
+  </div>
+
+  {% if section.settings.background_image_desktop %}
+    {{
+      section.settings.background_image_desktop
+      | image_url: width: 1440
+      | image_tag: class: 'image-banner__image--desktop'
+    }}
+  {% endif %}
+
+  {% if section.settings.background_image_mobile %}
+    {{
+      section.settings.background_image_mobile
+      | image_url: width: 768
+      | image_tag: class: 'image-banner__image--mobile'
+    }}
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Image banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image_desktop",
+      "label": "Background Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Background Image Mobile"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "below_text",
+      "label": "Below Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Banner",
+      "settings": {
+        "heading": "<p>If the wind will not serve, take to the oars.</p>",
+        "below_text": "-Latin Proverb"
+      }
+    }
+  ]
+}
+{% endschema %}
